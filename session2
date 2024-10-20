@@ -1,0 +1,19 @@
+# Python that prints the sum of two floating point numbers, the difference between two integers, and the product of a floating point number and an integer.
+#In each case, have the program print out the data type of the resulting answer.
+
+float1 = 12
+float2 = 6
+int1 = 20
+int2 = 3
+
+#Sum of two floating numbers
+sum_floats = float1 + float2 
+print(f"The sum of {float1} and {float2} is: {sum_floats}, and the data type is {type(sum_floats)}")
+
+#Difference between two integers
+difference_ints = int1 -  int2
+print(f"The difference between {int1} and {int2} is: {difference_ints}")
+
+#Product of floating number and integer
+product_float_int = float1 * int1
+print(f"The product of {float1} and {int1} is: {product_float_int}")
