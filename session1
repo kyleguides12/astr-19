@@ -1,0 +1,10 @@
+#This program will write about my first session of my code journal
+full_name= "Kyle Guides"
+preferred_pronouns= "he/him"
+favorite_movie= "One of my favorite movies is Interstellar. I love the soundtrack of this movie and the visual that came with it."
+favorite_food= "I love jambalaya because of the flavors and the seafood that you can mix in it."
+
+print(f"Full Name: {full_name}")
+print(f"Preferred Pronouns:{preferred_pronouns}")
+print(f"{favorite_movie}")
+print(f"{favorite_food}")
