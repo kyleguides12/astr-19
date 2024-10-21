@@ -1,0 +1,15 @@
+import numpy as np
+def sin_function(x):
+
+def cos_function(x):
+ 
+x_values = np.linspace(0, 2, 1000)
+sin_values = sin_function(x_values)
+cos_values = cos_function(x_values)
+tabulated_results = np.column_stack((x_values, sin_values, cos_values))
+
+print(f"{'x':<10}{'sin(x)':<20}{'cos(x)':<20}")
+for i in range(10):
+    print(f"{x_values[i]:<10.4f}{sin_values[i]:<20.10f}{cos_values[i]:<20.10f}")
+
+
