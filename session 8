@@ -1,0 +1,34 @@
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# array x ranging from 0 to 1 in 100 steps
+x = np.linspace(0, 1, 100)
+
+# Define functions
+def sin_function(x):
+    return np.sin(x)
+
+def cos_function(x):
+    return np.cos(x)
+
+# multipanel plot 
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
+
+# Plot sin(x) vs. x in the left panel
+ax1.plot(x, sin_function(x))
+ax1.set_title("sin(x)")
+ax1.set_xlabel("x")
+ax1.set_ylabel("sin(x)")
+
+# Plot
+ax2.plot(x, cos_function(x))
+ax2.set_title("cos(x)")
+ax2.set_xlabel("x")
+ax2.set_ylabel("cos(x)")
+
+plt.tight_layout()
+plt.savefig("multipanel_plot_sin_cos.pdf")
+
+# Display
+plt.show()
