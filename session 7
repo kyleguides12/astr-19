@@ -1,0 +1,21 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0, 1, 100)
+
+def exp_function(x):
+    return np.exp(x)
+
+# set y = exp(x)
+y = exp_function(x)
+
+# Plot 
+plt.plot(x, y)
+plt.xlabel("Time [milliseconds]")
+plt.ylabel("Awesomeness")
+plt.title("Plot of Awesomeness over Time")
+
+plt.savefig("plot_awesomeness_vs_time.pdf")
+
+# Display 
+plt.show()
